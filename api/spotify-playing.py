@@ -104,7 +104,7 @@ def makeSVG(data):
 
     return render_template("spotify.html.j2", **dataDict)
 
-@app.route("/", defaults={"path": ""})
+@app.route("/")
 def catch_all(path):
 
     data = nowPlaying()
